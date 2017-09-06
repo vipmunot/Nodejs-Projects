@@ -3,16 +3,18 @@
 I have used [OpenWeatherMap](https://openweathermap.org/api) for fetching weather information.
 
 <br/>
-Please update your key at apiKey 
+Please update your key at apiKey
+<br/> 
 * Run the web app locally:
 ```
 npm install
 node server.js
 // Now open your browser and visit: localhost:3000
 ```
+<br/>
 ![Weather App](https://github.com/vipmunot/Nodejs-Projects/tree/master/weather)
 
-
+<br/><br/><br/><br/><br/>
 
 
 
