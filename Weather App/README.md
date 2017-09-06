@@ -12,7 +12,7 @@ node server.js
 // Now open your browser and visit: localhost:3000
 ```
 <br/>
-![Weather App](https://github.com/vipmunot/Nodejs-Projects/tree/master/weather)
+![Weather App](https://raw.githubusercontent.com/vipmunot/Nodejs-Projects/master/img/weather.png)
 
 <br/><br/><br/><br/><br/>
 
