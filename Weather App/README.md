@@ -1,21 +1,13 @@
-# Weather App
+#  Weather App
 
 I have used [OpenWeatherMap](https://openweathermap.org/api) for fetching weather information.
 
-<br/>
-Please update your key at apiKey
-<br/> 
-Run the web app locally:
-- npm install
-- node server.js
+## Steps
+- $ npm install
+- $ node server.js
 
-Now open your browser and visit: localhost:3000
-
-<br/>
-![Weather App](https://raw.githubusercontent.com/vipmunot/Nodejs-Projects/master/img/weather.png)
-
-<br/><br/><br/><br/><br/>
-
+## Output
+![Simple Express Wesbite](https://raw.githubusercontent.com/vipmunot/Nodejs-Projects/master/img/weather.png)
 
 
 
