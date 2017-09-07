@@ -7,7 +7,7 @@ I have used [OpenWeatherMap](https://openweathermap.org/api) for fetching weathe
 - $ node server.js
 
 ## Output
-![Simple Express Wesbite](https://raw.githubusercontent.com/vipmunot/Nodejs-Projects/master/img/weather.png)
+![Weather App](https://raw.githubusercontent.com/vipmunot/Nodejs-Projects/master/img/weather.png)
 
 
 
