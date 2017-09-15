@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var upload = multer({dest:'./uploads'});
+var expressValidator = require('express-validator');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var flash = require('connect-flash');
@@ -41,15 +42,10 @@ app.use(session({
   saveUninitialized: true,
   resave: true
 }));
-
-// passport
+// Passport
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-// Validator
-
-const expressValidator = require('express-validator');
 // Validator
 app.use(expressValidator({
   errorFormatter: function(param, msg, value) {
@@ -69,13 +65,18 @@ app.use(expressValidator({
   }
 }));
 
-
 // Flash
-app.use(require('connect-flash')());
+app.use(flash());
 app.use(function (req, res, next) {
   res.locals.messages = require('express-messages')(req, res);
   next();
 });
+
+app.get('*', function(req, res, next) {
+  res.locals.user = req.user || null;
+  next();
+});
+
 
 app.use('/', index);
 app.use('/users', users);
