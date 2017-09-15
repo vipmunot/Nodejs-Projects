@@ -9,6 +9,7 @@ var upload = multer({dest:'./uploads'});
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var flash = require('connect-flash');
+var bcrypt = require('bcryptjs');
 var session = require('express-session');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
